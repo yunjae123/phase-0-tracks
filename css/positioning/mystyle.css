@@ -9,13 +9,13 @@ img {
 	left: 15px;
 }
 .glasses {
-	position: absolute;
-	left: 276px;
-	top: 235px;
+	position: relative;
+	left: 5px;
+	top: 50px;
 }
 .octopus {
 	position: relative;
-	bottom: 40px;
+	bottom: 110px;
 	z-index: -1;
 }
 
