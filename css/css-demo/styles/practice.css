@@ -1,0 +1,21 @@
+/* css document */
+
+#contact-info {
+    font-size: .8em;
+}
+
+.job {
+    background-color: #e9e5dc;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: .75em;
+    margin-top: .5em;
+}
+
+.accomplishments {
+    font-size: .8em;
+}
+
+section h3 {
+    color: #0066CC;
+}
