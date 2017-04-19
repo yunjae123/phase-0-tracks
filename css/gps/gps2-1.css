@@ -1,0 +1,35 @@
+.column-1 {
+	background-color: blue;
+	width: 40%;
+	vertical-align: top;
+	display: inline-block;
+	padding: 2%;
+	margin: 2%;
+}
+
+.column-2 {
+	background-color: red;
+	width: 40%;
+	vertical-align: top;
+	display: inline-block;
+	padding: 2%;
+	margin: 2%;
+}
+
+header {
+	background-color: grey;
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+}
+
+footer {
+	background-color: yellow;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.column-1, .column-2 {
+	border: solid 2px grey;
+	border-radius: 5px;
+}
