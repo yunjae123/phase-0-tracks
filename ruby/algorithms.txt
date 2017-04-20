@@ -1,0 +1,46 @@
+elevator.pseudocode
+	If going up {
+		press the up button
+	}
+	If going down {
+		press the down button
+	}
+
+	When the door opens {
+	step in
+		if door doesn't close {
+		press close button
+		}
+		if person is nearby elevator door {
+		press open button
+		}
+	}
+
+	If going up || down from current level {
+		choose desired floor with your cold motionless "fingers"
+	}
+
+	if people inside elevator {
+		throw small talk, such as "What do you think about the spanish inquisition of 1478"
+	} else {
+		be your disgusting emotionless self
+	}
+
+	when door opens {
+		if it's your chosen floor {
+			get outta there
+		} else {
+		continue being a robot
+		}
+	}
+
+finding_job_after_bootcamp.pseudocode
+
+until "prepared" = true
+	if prepared {
+		studying_your_ass_off = true
+		putting_in_hard_work = true
+		some_luck = true
+	}
+return job;
+
