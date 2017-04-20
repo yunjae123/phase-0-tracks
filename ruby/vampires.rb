@@ -75,6 +75,21 @@ def ask_questions
 			no_insurance = true
 		end;
 
+		puts "What are your allergies? List one at a time, and type 'done' when finished."
+		done = false
+		until done == true
+			allergies = gets.chomp
+			if allergies == "done"
+				done = true
+			elsif allergies == "sunshine"
+				puts "Probably a vampire"
+				done = true
+			else
+				done = false
+			end;
+		end;
+
+
 		if definitely_vampire == true
 			puts "Definitely a vampire"
 		elsif age_wrong && hates_garlic && no_insurance
@@ -87,6 +102,7 @@ def ask_questions
 
 	i += 1
 	end;
+	return "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 end;
 
 puts ask_questions;
