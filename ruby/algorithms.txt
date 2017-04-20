@@ -34,4 +34,13 @@ elevator.pseudocode
 		}
 	}
 
-finding_job_after_bootcamp
+finding_job_after_bootcamp.pseudocode
+
+until "prepared" = true
+	if prepared {
+		studying_your_ass_off = true
+		putting_in_hard_work = true
+		some_luck = true
+	}
+return job;
+
