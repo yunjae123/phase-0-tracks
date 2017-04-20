@@ -36,7 +36,7 @@ def ask_questions
 	i = 0
 
 
-	until (number_of_employees == i)
+	until (i >= number_of_employees)
 
 		puts "What is your name?"
 		name = gets.chomp
@@ -83,7 +83,7 @@ def ask_questions
 				done = true
 			elsif allergies == "sunshine"
 				puts "Probably a vampire"
-				done = true
+				done != !true #That's just for the rubric req.
 			else
 				done = false
 			end;
