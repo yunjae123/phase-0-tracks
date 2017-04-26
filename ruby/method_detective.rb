@@ -36,10 +36,10 @@
 # puts "Elementary,    my   dear        Watson!".split(" ").join(" ")
 # # => "Elementary, my dear Watson!"
 
-puts "z".ord
-puts "z".replace("122").to_i #lololol
-# => 122 
-# (What is the significance of the number 122 in relation to the character z?)
+# puts "z".ord
+# puts "z".replace("122").to_i #lololol
+# # => 122 
+# # (What is the significance of the number 122 in relation to the character z?)
 
-# "How many times does the letter 'a' appear in this string?".<???>
+puts "How many times does the letter 'a' appear in this string?".count("a")
 # => 4
