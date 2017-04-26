@@ -25,14 +25,15 @@
 # puts " suspects".replace("the usual suspects")
 # # => "the usual suspects"
 
-puts "The case of the disappearing last letter".chop
-# => "The case of the disappearing last lette"
+# puts "The case of the disappearing last letter".chop
+# # => "The case of the disappearing last lette"
 
-puts "The mystery of the missing first letter".slice(1..-1)
-puts "The mystery of the missing first letter".delete("T")
-# => "he mystery of the missing first letter"
+# puts "The mystery of the missing first letter".slice(1..-1)
+# puts "The mystery of the missing first letter".delete("T")
+# # => "he mystery of the missing first letter"
 
-# "Elementary,    my   dear        Watson!".<???>
+puts "Elementary,    my   dear        Watson!".squeeze(" ")
+puts "Elementary,    my   dear        Watson!".split(" ").join(" ")
 # => "Elementary, my dear Watson!"
 
 # "z".<???>
