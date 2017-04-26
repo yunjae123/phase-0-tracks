@@ -11,13 +11,14 @@ puts "zom".insert(1, "o")
 puts "zom".insert(2, "o")
 # => “zoom”
 
-puts "enhance".center(4 + 7 + 4)
+puts "enhance".center(4 + 7 + 4) #Or just 15 
 # => "    enhance    "
 
 puts "Stop! You’re under arrest!".upcase
 # => "STOP! YOU’RE UNDER ARREST!"
 
-# "the usual".<???>
+puts "the usual".concat(" suspects")
+puts "the usual".insert(-1, " suspects")
 #=> "the usual suspects"
 
 # " suspects".<???>
