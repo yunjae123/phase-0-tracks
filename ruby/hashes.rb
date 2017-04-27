@@ -1,10 +1,11 @@
 # Pseudocode
-# make hash
+# make empty hash
 # Ask questions
 # take some name
+# take some gender
 # take some age
 # take number of children
-# take decor theme
+# take decor theme with a sassy attitude
 # kick some ass
 
 # output all their inputs
@@ -52,3 +53,7 @@ def ask_questions
 end
 
 puts ask_questions
+
+# Now, I am not sure I how would have separated this method so that it 
+# has a separated part from user based and back end based, but I will
+# definitely look into it!
