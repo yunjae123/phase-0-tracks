@@ -61,12 +61,19 @@ def alias_manager(first_last)
 end
 
 ##### USER INTERFACE #####
-
-loop do
+def ask_user
 	name_storage = {}
-	puts "Enter name first and last bro"
-	input = gets.chomp
-	break if input == "quit"
-	result = alias_manager(input)
-	puts result
+
+	loop do
+		puts "Enter name first and last bro"
+		input = gets.chomp
+		break if input == "quit"
+		name_storage.store(input, alias_manager(input))
+		result = alias_manager(input)
+		puts result
+	end
+
+	return name_storage
 end
+
+ask_user.each { |name, alias_name| puts "#{name}'s alias name is #{alias_name}" }
