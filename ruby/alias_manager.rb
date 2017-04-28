@@ -18,11 +18,12 @@ def swap_first_last(name)
 	return new_name
 end	
 
-def name_scarmbler(name)
+def name_scrambler(name)
 	vowels = ["a","e","i","o","u"]
 	consonants = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
 	new_name = []
-	name_array = name.downcase.split("")
+	name_downcased = name.downcase
+	name_array = name_downcased.split("")
 
 	x = 0
 	while x < name_array.length
@@ -51,8 +52,8 @@ def alias_manager(first_last)
 	first_name = new_name[0]
 	last_name = new_name[1]
 
-	new_first = name_scarmbler(first_name)
-	new_last = name_scarmbler(last_name)
+	new_first = name_scrambler(first_name)
+	new_last = name_scrambler(last_name)
 	upcased_first = new_first.slice(0).upcase + new_first.slice(1..-1)
 	upcased_last = new_last.slice(0).upcase + new_last.slice(1..-1)
 
@@ -62,8 +63,10 @@ end
 ##### USER INTERFACE #####
 
 loop do
+	name_storage = {}
 	puts "Enter name first and last bro"
-	result = alias_manager(gets.chomp)
-	break if result == "quit"
+	input = gets.chomp
+	break if input == "quit"
+	result = alias_manager(input)
 	puts result
 end
