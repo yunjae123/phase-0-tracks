@@ -58,4 +58,12 @@ def alias_manager(first_last)
 
 	return upcased_first + " " + upcased_last
 end
-p alias_manager("Yun chang")
+
+##### USER INTERFACE #####
+
+loop do
+	puts "Enter name first and last bro"
+	result = alias_manager(gets.chomp)
+	break if result == "quit"
+	puts result
+end
