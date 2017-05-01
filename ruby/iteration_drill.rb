@@ -167,7 +167,7 @@ def check_hash(string, hash)
 	end
 	return true
 end
-p check_hash("Dodo", extinct_animals)
+# p check_hash("Dodo", extinct_animals)
 
 
 # 5. We just found out that the Passenger Pigeon is actually not extinct!
@@ -175,3 +175,23 @@ p check_hash("Dodo", extinct_animals)
 # Find the built-in method that helps you accomplish this in the Ruby documentation
 # for Hashes.
 # ----
+
+def remove_pp(hash)
+	new_array = []
+	hash.each do |key, value|
+		if key == "Passenger Pigeon"
+			new_array.push(key)
+			new_array.push(hash[key])
+		end
+	end
+	hash.delete_if {|key, value| key == "Passenger Pigeon"}
+	return new_array
+end
+# p remove_pp(extinct_animals)
+
+def remove_pp2(hash)
+	new_array = hash.values_at("Passenger Pigeon")
+	hash.delete_if {|key, value| key == "Passenger Pigeon"}
+	return new_array.unshift("Passenger Pigeon")
+end
+# p remove_pp2(extinct_animals)
