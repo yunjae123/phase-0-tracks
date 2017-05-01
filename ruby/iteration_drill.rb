@@ -15,12 +15,31 @@ def print_items(array)
 	end
 	new_array.join(" * ")
 end
-p print_items(zombie_apocalypse_supplies)
+# p print_items(zombie_apocalypse_supplies)
 
 
 # 2. In order to keep yourself organized, sort your zombie_apocalypse_supplies
 # in alphabetical order. Do not use any special built-in methods.
 # ----
+def alphabetize(array)
+	letters = "abcdefghijklmnopqrstuvwxyz".split("")
+	new_array = []
+	x = 0
+	y = 0
+	while x < letters.length
+		while y < array.length
+			if letters[x] == array[y].slice(0).downcase
+				new_array.push(array[y])
+			end
+			y += 1
+		end
+		x += 1
+		y = 0
+	end
+	return new_array
+end
+p alphabetize(zombie_apocalypse_supplies)
+
 
 # 3. Create a method to see if a particular item (string) is in the
 # zombie_apocalypse_supplies. Do not use any special built-in methods.
