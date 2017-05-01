@@ -55,21 +55,41 @@ def item_included(string, array)
 	end
 	return false
 end
-puts item_included("cb radIO", zombie_apocalypse_supplies)
+# puts item_included("cb radIO", zombie_apocalypse_supplies)
+
 
 # 4. You can't carry too many things, you've only got room in your pack for 5.
 # Remove items in your zombie_apocalypse_supplies in any way you'd like,
 # leaving only 5. Do not use any special built-in methods.
 # ----
+def remove_til5(array)
+	x = array.length
+	until x <= 5
+		array.pop()
+		x -= 1
+	end
+	return array
+end
+puts remove_til5(zombie_apocalypse_supplies)
+
 
 # 5. You found another survivor! This means you can combine your supplies.
 # Create a new combined supplies list out of your zombie_apocalypse_supplies
 # and their supplies below. You should get rid of any duplicate items.
 # Find the built-in method that helps you accomplish this in the Ruby
 # documentation for Arrays.
+zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
+                              "shotgun", "compass", "CB radio", "batteries"]
 other_survivor_supplies = [ "warm clothes", "rations", "compass", "camp stove",
                             "solar battery", "flashlight"]
 # ----
+def combine_supply(arr1, arr2)
+	new_array = arr1 + arr2
+	unique_array = new_array.uniq
+	return unique_array
+end
+p combine_supply(other_survivor_supplies, zombie_apocalypse_supplies)
+
 
 # Hash Drills
 
