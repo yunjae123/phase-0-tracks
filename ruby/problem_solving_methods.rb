@@ -35,7 +35,8 @@ def array_maker(length)
 	return new_array
 end
 
-p array_maker(6)
+ # fibonacci(100) == 218922995834555169026
+
 
 
 
