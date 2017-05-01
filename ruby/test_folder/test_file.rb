@@ -1,9 +1,25 @@
-your_hash = {
-	Name: "Yun",
-	Address: "1234 asdf drive",
-	Email: "asdf@yahoo.com",
-	Phone: 123123
-}
+def merge_sort(list)
+	if list.length <= 1
+		list
+	else
+		mid = (list.length / 2).floor
+		left = merge_sort(list[0..mid - 1])
+		right = merge_sort(list[mid..list.length])
+		merge(left, right)
+	end
+end
 
-puts your_hash[:Name] + " " + your_hash[:Address]
-puts your_hash[:Name]
+def merge(left, right)
+	if left.empty?
+		right
+	elsif right.empty?
+		left
+	elsif left.first < right.first
+		[left.first] + merge(left[1..left.length], right)
+	else
+		[right.first] + merge(left, right[1..right.length])
+	end
+end
+
+puts merge_sort([4,6,24,90,1,2,20,8])
+			
