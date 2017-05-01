@@ -20,21 +20,23 @@ def fibonacci(n)
 	elsif n == 2
 		1
 	else
-		fibonacci(n-1) + fibonacci(n-2)
+		fibonacci(n-1) + fibonacci(n-2) 
 	end
 end
 
+p fibonacci(5)
 
 def array_maker(length)
 	new_array = []
 	x = 1
-	while x < length
+	while x <= length
 		new_array.push(fibonacci(x))
 		x += 1
 	end
 	return new_array
 end
 
+p array_maker(9)
 
 
 

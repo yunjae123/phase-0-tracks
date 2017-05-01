@@ -6,6 +6,17 @@ zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
 # 1. Iterate through the zombie_apocalypse_supplies array,
 # printing each item in the array separated by an asterisk
 # ----
+def print_items(array) 
+	new_array = [];
+	x = 0
+	while x < array.length
+		new_array.push(array[x])
+		x += 1
+	end
+	new_array.join(" * ")
+end
+p print_items(zombie_apocalypse_supplies)
+
 
 # 2. In order to keep yourself organized, sort your zombie_apocalypse_supplies
 # in alphabetical order. Do not use any special built-in methods.
