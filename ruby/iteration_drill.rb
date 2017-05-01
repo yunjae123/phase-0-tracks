@@ -38,13 +38,24 @@ def alphabetize(array)
 	end
 	return new_array
 end
-p alphabetize(zombie_apocalypse_supplies)
+# p alphabetize(zombie_apocalypse_supplies)
 
 
 # 3. Create a method to see if a particular item (string) is in the
 # zombie_apocalypse_supplies. Do not use any special built-in methods.
 # For instance: are boots in your list of supplies?
 # ----
+def item_included(string, array)
+	x = 0
+	while x < array.length
+		if array[x].downcase == string.downcase
+			return true
+		end
+		x += 1
+	end
+	return false
+end
+puts item_included("cb radIO", zombie_apocalypse_supplies)
 
 # 4. You can't carry too many things, you've only got room in your pack for 5.
 # Remove items in your zombie_apocalypse_supplies in any way you'd like,
