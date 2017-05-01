@@ -70,7 +70,7 @@ def remove_til5(array)
 	end
 	return array
 end
-puts remove_til5(zombie_apocalypse_supplies)
+# puts remove_til5(zombie_apocalypse_supplies)
 
 
 # 5. You found another survivor! This means you can combine your supplies.
@@ -88,7 +88,7 @@ def combine_supply(arr1, arr2)
 	unique_array = new_array.uniq
 	return unique_array
 end
-p combine_supply(other_survivor_supplies, zombie_apocalypse_supplies)
+# p combine_supply(other_survivor_supplies, zombie_apocalypse_supplies)
 
 
 # Hash Drills
@@ -106,6 +106,13 @@ extinct_animals = {
 # 1. Iterate through extinct_animals hash, printing each key/value pair
 # with a dash in between the key and value, and an asterisk between each pair.
 # ----
+def print_hash(hash)
+	hash.each do |key, value|
+		puts "#{key} - #{value}"
+		puts "*"
+	end
+end
+print_hash(extinct_animals)
 
 # 2. Keep only animals in extinct_animals if they were extinct before
 # the year 2000. Do not use any special built-in methods.
