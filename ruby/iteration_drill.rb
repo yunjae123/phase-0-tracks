@@ -112,17 +112,45 @@ def print_hash(hash)
 		puts "*"
 	end
 end
-print_hash(extinct_animals)
+# print_hash(extinct_animals)
 
 # 2. Keep only animals in extinct_animals if they were extinct before
 # the year 2000. Do not use any special built-in methods.
 # ----
+def keep_before2000(hash)
+	new_hash = {}
+	hash.each do |key, value|
+		if hash[key] < 2000
+			new_hash[key] = "#{value}".to_i
+		end
+	end
+	return new_hash
+end
+# p keep_before2000(extinct_animals)
+
 
 # 3. Our calculations were completely off, turns out all of those animals went
 # extinct 3 years before the date provided. Update the values in extinct_animals
 # so they accurately reflect what year the animal went extinct.
 # Do not use any special built-in methods.
 # ----
+def add_3years(hash)
+	hash.each do |key, value|
+		hash[key] = "#{value}".to_i - 3
+	end
+	return hash 
+end
+# p add_3years(extinct_animals)
+
+extinct_animals = {
+  "Tasmanian Tiger" => 1936,
+  "Eastern Hare Wallaby" => 1890,
+  "Dodo" => 1662,
+  "Pyrenean Ibex" => 2000,
+  "Passenger Pigeon" => 1914,
+  "West African Black Rhinoceros" => 2011,
+  "Laysan Crake" => 1923
+}
 
 # 4. You've heard that the following animals might be extinct, but you're not sure.
 # Check if they're included in extinct_animals, one by one:
@@ -131,6 +159,16 @@ print_hash(extinct_animals)
 # "Saiga Antelope"
 # Do not use any special built-in methods.
 # ----
+def check_hash(string, hash)
+	hash.each do |key, value|
+		if hash[string] == nil
+			return false
+		end
+	end
+	return true
+end
+p check_hash("Dodo", extinct_animals)
+
 
 # 5. We just found out that the Passenger Pigeon is actually not extinct!
 # Remove them from extinct_animals and return the key value pair as a two item array.
