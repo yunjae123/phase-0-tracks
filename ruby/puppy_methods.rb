@@ -10,7 +10,11 @@ class Puppy
 			puts "Woof!"
 		end
 	end
+
+	def roll_over
+		puts "*rolls over*"
+	end
 end
 
 corgi = Puppy.new
-p corgi.speak(4)
+p corgi.roll_over
