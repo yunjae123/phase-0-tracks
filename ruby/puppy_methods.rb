@@ -14,7 +14,11 @@ class Puppy
 	def roll_over
 		puts "*rolls over*"
 	end
+
+	def dog_years(human_years)
+		puts human_years * 7
+	end
 end
 
 corgi = Puppy.new
-p corgi.roll_over
+p corgi.dog_years(5)
