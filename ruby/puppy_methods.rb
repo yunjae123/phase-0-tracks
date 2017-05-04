@@ -1,15 +1,10 @@
 class Puppy
 
-  def fetch(toy)
-    puts "I brought back the #{toy}!"
-    toy
-  end
+	def fetch(toy)
+	  puts "I brought back the #{toy}!"
+	  toy
+	end
 
-end
-
-corgi = Puppy.new
-
-class Puppy
 	def speak(number)
 		number.times do
 			puts "Woof!"
@@ -17,4 +12,5 @@ class Puppy
 	end
 end
 
+corgi = Puppy.new
 p corgi.speak(4)
