@@ -2,7 +2,7 @@
 # Doggios Maximus
 
 # Characteristics --------
-# Common Name:  Shiba Inu
+# Common Name:  Shiba Inu, and million others
 # Friendly: Yes
 # Eye count: 2
 # Superior to humans: Yes
@@ -16,3 +16,4 @@
 # Dog Food
 # Biscuits
 # Jerky
+# Love
