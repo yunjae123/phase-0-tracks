@@ -18,7 +18,20 @@ class Puppy
 	def dog_years(human_years)
 		puts human_years * 7
 	end
+
+	def borker(number)
+		borks = ["bork", "bark", "york", "grrr", "berk", "yip"]
+		finished_bork = []
+		number.times do 
+			rand_num = rand(borks.length)
+			finished_bork.push(borks[rand_num])
+		end
+		return finished_bork.join(" ")
+	end
+
 end
 
 corgi = Puppy.new
-p corgi.dog_years(5)
+p corgi.borker(5)
+
+
