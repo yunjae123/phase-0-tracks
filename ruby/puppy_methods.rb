@@ -73,7 +73,7 @@ end
 kitten = Cat.new
 # kitten.say_meow(5)
 # kitten.up_down(5)
-kitten.spit_hairball
+# kitten.spit_hairball
 
 index = 0
 instance_arr = []
@@ -83,7 +83,10 @@ loop do
 	index += 1
 end
 
-instance_arr.each
+instance_arr.each do |instance|
+	puts instance.spit_hairball
+end
+
 
 
 
