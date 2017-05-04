@@ -29,9 +29,18 @@ class Puppy
 		return finished_bork.join(" ")
 	end
 
-end
+	def initialize
+		puts "Initializing new puppy instance..."
+	end
 
-corgi = Puppy.new
+end
+corgi = Puppy.new #This is when the initialize method runs. 
+# I don't know why or how it runs by itself.
+# Ohhhhh it's a special method!
+p corgi.fetch("ball")
+p corgi.speak(5)
+p corgi.roll_over
+p corgi.dog_years(7)
 p corgi.borker(5)
 
 
