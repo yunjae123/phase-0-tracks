@@ -45,13 +45,35 @@ end
 
 class Cat
 
+	def initialize 
+		puts "Kit_kat generated"
+	end
+
+	def spit_hairball
+		puts "BLEGH"
+	end
+
 	def say_meow(number)
 		number.times{ puts "Meow BOIII" }
 	end
 
+	def up_down(number)
+		x = 0
+		while x <= number
+			if x % 2 == 0
+				puts "I'm jumping UP"
+			else
+				puts "I'm FALLING BOII"
+			end
+			x += 1
+		end
+	end
+
 end
 kitten = Cat.new
-kitten.say_meow(5)
+# kitten.say_meow(5)
+# kitten.up_down(5)
+kitten.spit_hairball
 
 index = 0
 instance_arr = []
@@ -60,6 +82,8 @@ loop do
 	instance_arr.push(Cat.new)
 	index += 1
 end
+
+instance_arr.each
 
 
 
