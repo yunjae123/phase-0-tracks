@@ -7,3 +7,14 @@ class Puppy
 
 end
 
+corgi = Puppy.new
+
+class Puppy
+	def speak(number)
+		number.times do
+			puts "Woof!"
+		end
+	end
+end
+
+p corgi.speak(4)
