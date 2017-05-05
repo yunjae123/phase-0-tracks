@@ -32,16 +32,15 @@
 
 grocery_list = {}
 def create_list(grocery_list, items)
-  items.split(' ').each {|item| grocery_list[item] = 1}
-  p grocery_list
+  return items.split(' ').each {|item| grocery_list[item] = 1}
 end
 
 def add_item(grocery_list, item, quantity=1)
-  grocery_list[item] = quantity
+  return grocery_list[item] = quantity
 end
 
 def remove_item(grocery_list, item)
-  grocery_list.delete(item)
+  return grocery_list.delete(item)
 end
 ####### Repetitive 
 # def update_quantity(grocery_list, item, quantity)
@@ -50,8 +49,7 @@ end
 # update_quantity(grocery_list, "apple", 50)
 
 def print_list(grocery_list)
-
-	grocery_list.each { |item, quantity| puts "You have #{quantity} #{item}(s)!" } 
+	return grocery_list.each { |item, quantity| puts "You have #{quantity} #{item}(s)!" } 
 end
 
 
