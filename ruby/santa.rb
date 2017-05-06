@@ -1,7 +1,7 @@
 class Santa
 
-	attr_reader :age, :ethnicity
-	attr_accessor :gender
+	attr_reader :ethnicity
+	attr_accessor :gender, :age
 
 	def initialize(gender, ethnicity)
 		puts "Initializing Santa instance..."
@@ -30,24 +30,20 @@ class Santa
 	end
 end
 #### TESTING
-test_santa = Santa.new("oldman", "male")
-p test_santa.celebrate_birthday
-p test_santa.gender = "female"
+# test_santa = Santa.new("oldman", "male")
+# p test_santa.celebrate_birthday
+# p test_santa.gender = "female"
 
+#### RELEASE 4
+example_genders = ["agender", "cat", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
+200000.times do
+	santa = Santa.new(example_genders.sample, example_ethnicities.sample)
+	santa.age = rand(1..140)
+	puts santa.age
+	puts santa.gender
+	puts santa.ethnicity
+end
 
-
-# santas = []
-# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-# example_genders.length.times do |i|
-# 	santas << Santa.new(example_genders[i], example_ethnicities[i])
-# end
-
-
-
-
-# old_beard = Santa.new
-# old_beard.speak
-# old_beard.eat_milk_and_cookies("oatmeal")
 
