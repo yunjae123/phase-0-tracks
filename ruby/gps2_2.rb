@@ -60,3 +60,23 @@ p grocery_list
 remove_item(grocery_list, "pears")
 p grocery_list
 print_list(grocery_list)
+
+
+## REFLECTION
+# I learned that by pseudocoding beforehand really helps
+# to give you a solid gameplan on how to approach 
+# the problem. 
+# The trade offs for using hashes instead of arrays 
+# is that with a hash, you can store a value with
+# a key for times your input can have deeper meaning
+# than just the value itself.
+# Arrays, you can easily just store as values.
+# A method returns any value you specify it to return
+# at the bottom of the method.
+# You can pass any objects into a method.
+# Objects can arrange from strings, all the way to
+# hashes.
+# You can make a method return a chunk of information
+# in which you can then use that info for another method.
+# Learning to manipulate scopes of variables were 
+# learned very solidly in this GPS. Nothing was too confusing.
