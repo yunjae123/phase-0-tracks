@@ -38,12 +38,26 @@ end
 example_genders = ["agender", "cat", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-200000.times do
-	santa = Santa.new(example_genders.sample, example_ethnicities.sample)
-	santa.age = rand(1..140)
-	puts santa.age
-	puts santa.gender
-	puts santa.ethnicity
-end
+# 200000.times do
+# 	santa = Santa.new(example_genders.sample, example_ethnicities.sample)
+# 	santa.age = rand(1..140)
+# 	puts santa.age
+# 	puts santa.gender
+# 	puts santa.ethnicity
+# end
 
+# def santa_maker(number_of_santas)
+# 	example_genders = ["agender", "cat", "bigender", "male", "female", "gender fluid", "N/A"]
+# 	example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+# 	index = 0
 
+# 	while index < number_of_santas
+# 		santa = Santa.new(example_genders.sample, example_ethnicities.sample)
+# 		santa.age = rand(140)
+# 		puts santa.age
+# 		puts santa.gender
+# 		puts santa.ethnicity
+# 		index += 1
+# 	end
+# end
+# santa_maker(100000)
