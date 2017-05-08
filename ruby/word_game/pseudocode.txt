@@ -1,0 +1,15 @@
+game
+
+	start game
+
+	number of guesses
+
+	repeated guesses don't count
+
+	show correct letter
+
+	if they win, congratulate them
+
+	if they lose, say bad
+
+end of game
