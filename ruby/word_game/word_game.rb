@@ -40,24 +40,24 @@ class Wordgame
 
 end
 
-puts "Hey welcome to hangman, pick a word"
-game = Wordgame.new(gets.chomp)
+# puts "Hey welcome to hangman, pick a word"
+# game = Wordgame.new(gets.chomp)
 
-until game.guess_count == game.number_of_guesses
-	puts "pick a letter to guess"
-	guess = gets.chomp
-	game.take_guess(guess)
-	p game.progress.join(" ")
-	p "Number of guesses you made :" + game.guess_count.to_s
-	if game.game_won == true
-		puts "DUDE YOU DID IT"
-		break
-	end
-end
+# until game.guess_count == game.number_of_guesses
+# 	puts "pick a letter to guess"
+# 	guess = gets.chomp
+# 	game.take_guess(guess)
+# 	p game.progress.join(" ")
+# 	p "Number of guesses you made :" + game.guess_count.to_s
+# 	if game.game_won == true
+# 		puts "DUDE YOU DID IT"
+# 		break
+# 	end
+# end
 
-if game.guess_count == game.number_of_guesses
-	puts "YOU SUCK BOI"
-end
+# if game.guess_count == game.number_of_guesses
+# 	puts "YOU SUCK BOI"
+# end
 
 
 
