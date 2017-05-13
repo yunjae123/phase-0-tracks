@@ -45,8 +45,8 @@ if (car1.goodMpg) {
 var car2 = new Car("Lamborghini Aventador", "v12", false);
 console.log(car2.vroom());
 if (car2.goodMpg) {
-	console.log("The", car2.name + " has great mileage!")
+	console.log("The", car2.name + " has great mileage!");
 } else {
-	console.log("This thing chugs gas equivalent to 50 " + car1.name + "'s")
+	console.log("This thing chugs gas equivalent to about 50 " + car1.name + "'s");
 }
 
