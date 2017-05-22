@@ -1,0 +1,28 @@
+SELECT * FROM reviews, users, businesses 
+WHERE reviews.user_id = users.id
+AND reviews.business_id = businesses.id;
+
+SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment
+FROM reviews JOIN
+users 
+ON reviews.user_id = users.id JOIN
+businesses 
+ON reviews.business_id = businesses.id;
+
+SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment
+FROM reviews JOIN
+users 
+ON reviews.user_id = users.id JOIN
+businesses 
+ON reviews.business_id = businesses.id;
+
+
+// FOR TWO TABLES 
+
+SELECT * FROM players, teams 
+WHERE players.team_id = teams.id;
+
+SELECT players.name, teams.name 
+FROM players JOIN
+	teams 
+	ON players.team_id = teams.id;
