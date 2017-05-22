@@ -1,0 +1,8 @@
+1. select * from boards;
+2. update boards set price=1600 where price=1599;
+3. select * from boards, company where boards.company_id = company.id;
+4. select boards.name, boards.price, company.company from boards join company on boards.company_id = company.id;
+5. delete from boards where name="Single";
+
+
+
