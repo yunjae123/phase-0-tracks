@@ -1,0 +1,6 @@
+Linux is a multiuser, and also a multitasking system.
+They intended it to be very different from windows, mac, or other operating systems. Their philosophy is that the users that use linux, or unix, knows what they are doing. The user is computer literate from the start. It gives all the power to the user, therefore even if bad things can happen, there is room for limitless types of activities. Linux does not hold your hand and walk you through on how to use the power given to you, it assumes you know what you are doing. 
+
+I think a vps is creating a server online, not using a physical machine like your computer or your laptop. And it creates a new, operating system within that online cloud. Some advatages that came upon my research are that they are less expensive than using a physical server. You can handpick only the feature that you would want to use so that you don't have to pay excess for the features you won't need. 
+
+Running programs as a root user defeats the purpose of linux's security model. Most applications are meant to be run from a non-administrative pov. Therefore, you can only modify the unlying structure of the system by being given the privilege to. So to summarize why you shouldn't run programs as the root user in one word is, security.
